@@ -75,7 +75,7 @@ class Snake():
     def __init__(self, position, length, xdir, ydir, field_dimensions, world_dimensions):
         #(west,north,east,south) points
         self.bounds = {"west":world_dimensions[0]/4, "north":world_dimensions[1]/4, "east":3*world_dimensions[0]/4+field_dimensions[0], "south":3*world_dimensions[1]/4+field_dimensions[1]}
-        self.color = (0, 255, 0)
+        self.color = (255, 0, 0)
         self.body = []
         self.turns = {}
         self.position = position
