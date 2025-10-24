@@ -876,7 +876,7 @@ class Game():
                         self.random_pellets.pellets.pop(i)
                     else:
                         self.random_pellets.resetPellet(pellet)
-                    snake.grow(pellet.val, pellet.color)
+                    snake.grow(pellet.val *2 , pellet.color)
                 if snake.collides_self():
                     sound = comm.Message.SELF_COLLISION
                     dead_snakes.append(snake)
